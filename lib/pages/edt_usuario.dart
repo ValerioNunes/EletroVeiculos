@@ -71,6 +71,8 @@ class _UpdateUserState extends State<UpdateUser> {
   TextEditingController _nome = new TextEditingController();
   TextEditingController _sobrenome = new TextEditingController();
   TextEditingController _matricula = new TextEditingController();
+  TextEditingController _nivel = new TextEditingController();
+
   DateTime _dateNascimento = null;
 
   var _cpf = new MaskedTextController(mask: '000.000.000-00');
@@ -83,7 +85,7 @@ class _UpdateUserState extends State<UpdateUser> {
     _sobrenome.text = usuario.sobrenome;
     _cpf.text = usuario.cpf;
     _telefonepessoal.text = usuario.telefonePessoal;
-
+    _nivel.text = usuario.nivel.toString();
   }
 
 
@@ -138,6 +140,20 @@ class _UpdateUserState extends State<UpdateUser> {
                   hintText: 'Sobrenome',
                   //filled: true,
                   icon: const Icon(Icons.person),
+                  labelStyle: new TextStyle(
+                      decorationStyle: TextDecorationStyle.solid)),
+            ),
+            new TextFormField(
+              keyboardType: TextInputType.text,
+              autocorrect: false,
+              controller: _nivel,
+              enabled:  false,
+              maxLines: 1,
+              decoration: new InputDecoration(
+                  labelText: 'Nivel Acesso',
+                  hintText: 'Nivel Acesso',
+                  //filled: true,
+                  icon: const Icon(Icons.lock),
                   labelStyle: new TextStyle(
                       decorationStyle: TextDecorationStyle.solid)),
             ),

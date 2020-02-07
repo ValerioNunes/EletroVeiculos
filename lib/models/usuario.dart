@@ -18,6 +18,7 @@ class Usuario{
         sobrenome = snapshot["sobrenome"],
         telefonePessoal = snapshot["telefonePessoal"],
         email = snapshot["email"],
+        nivel = snapshot["nivel"],
         uid = snapshot["uid"];
 
   toJson() {
@@ -26,6 +27,7 @@ class Usuario{
       "cpf":cpf,
       "uid":uid,
       "matricula":matricula,
+      "nivel" : nivel,
       "sobrenome":sobrenome,
       "telefonePessoal":telefonePessoal,
       "email":email,

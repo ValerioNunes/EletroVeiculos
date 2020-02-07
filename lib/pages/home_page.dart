@@ -5,12 +5,9 @@ import 'package:eletroveiculos/services/crud.dart';
 import 'package:eletroveiculos/pages/edt_usuario.dart';
 import 'package:eletroveiculos/pages/generate_qrcode.dart';
 import 'package:eletroveiculos/models/usuario.dart';
-import 'package:eletroveiculos/pages/parcerias.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:eletroveiculos/pages/veiculo_list.dart';
 import 'package:eletroveiculos/pages/map_view.dart';
-import 'package:eletroveiculos/pages/local_view.dart';
-import 'nota_view.dart';
 class DrawerItem {
   String title;
   IconData icon;
@@ -188,7 +185,7 @@ class _HomePageState extends State<HomePage> {
           title: new Text(Util.nomeApp),
           actions: <Widget>[
             new FlatButton(
-                child: new Text('Logout',
+                child: new Text('Sair',
                             style: new TextStyle(fontSize: 17.0, color: Colors.white)),
                             onPressed: _signOut)
           ],
