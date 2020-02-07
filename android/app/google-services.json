@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "51112785988",
+    "firebase_url": "https://eletroinovacao-c2e33.firebaseio.com",
+    "project_id": "eletroinovacao-c2e33",
+    "storage_bucket": "eletroinovacao-c2e33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51112785988:android:532846f3ad73422a",
+        "android_client_info": {
+          "package_name": "com.vale.eletroveiculos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51112785988-3agjmrg08vg3sb7u4tgciescn4iqua8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn7M7V6-6JUvnc8tGh8MuQaLG3puaGWgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51112785988-3agjmrg08vg3sb7u4tgciescn4iqua8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
